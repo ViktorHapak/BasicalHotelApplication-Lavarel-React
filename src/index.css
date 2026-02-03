@@ -1,0 +1,201 @@
+body{
+  background-color: aliceblue; /*Just for test */
+}
+
+.login-container, .signup-container, .navbar, .main-body{
+  z-index: 1;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-container ul li {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+.message-container{
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  z-index: 6;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 450px;
+  height: 150px;
+  padding: 20px;
+  transition: 0.5s;
+  box-shadow: 0 0 2px rgba(25, 25, 25, 0.9) !important;
+}
+
+.message-title{
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-line;
+  color: black;
+  text-decoration: none;
+}
+
+.ok{
+  width: 30%;
+  align-self: self-end;
+  padding: 1px;
+  text-align: center;
+}
+
+
+.navbar ul .nav-item:after{
+  content:' ';
+  width: 1%;
+  height: 1px;
+  background: transparent;
+  display: block;
+  margin: auto;
+  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.navbar ul .nav-item:hover::after{
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  background: white;
+}
+
+ul li a{
+  cursor: pointer;
+}
+
+.main-page{
+  position: absolute;
+  display: flex;
+  gap: 0;
+  width: 100%;
+  top: 7%;
+  bottom: 0;
+}
+
+aside{
+  width: 20%;
+  height: 100%;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+main{
+  height: 100%;
+  width: 80%;
+}
+
+.menu-link{
+  display: block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: background .2s ease;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  background: blanchedalmond;
+  color: orange;
+  cursor: pointer;
+}
+.menu-link.active {
+  background: #fff;
+  color: orange;
+}
+
+.row a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.loading-div{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading-title{
+  width: auto;
+  display: block;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.loading-box{
+  width: 30%;
+  height: 20px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.loading-line{
+  position: relative;
+  height: 20px;
+  margin: 0 0;
+  padding: 2px;
+  background-color: lightgrey;
+  animation: loading 1s cubic-bezier(1,1,1,1) infinite;
+  overflow: hidden;
+}
+
+/* nice square-ish thumbnail */
+.room-img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes loading {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@keyframes rotate {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 180deg;
+  }
+
+}
+
+.fade-background{
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.userform-container, .roomform-container, .reservationform-container {
+  z-index: 5;
+}
+
+@media (min-width: 900px) {
+  .login-container, .signup-container, .userform-container{
+    transform: translateY(-5vh);
+  }
+}
+
+
+
