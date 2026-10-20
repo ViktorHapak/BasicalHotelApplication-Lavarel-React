@@ -90,15 +90,6 @@ export default function Login(){
 
   return (
    <div className="d-flex justify-content-center align-items-center min-vh-100">
-       {!token &&
-           <div className="demo-message-div">
-               <p>Üdvözöllek a weboldalam demo módjában! A megtekintéshez használjon anonim bejelentkezést!</p>
-               <ul>
-                   <li>Felhasználónév: <i>anonymus</i></li>
-                   <li>Jelszó: <i>Anonim123...</i></li>
-               </ul>
-           </div>
-       }
        <div className="login-container card shadow-sm container col-6 px-0">
            <form noValidate={true} onSubmit={onSubmit}>
                <h1 className="title card-title text-center m-3">
