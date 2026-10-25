@@ -151,7 +151,7 @@ export default function Signup() {
                         */}
                     </div>
                     <div className="email-container col-md-6">
-                        <label>Felhasználónév</label>
+                        <label>Email</label>
                         <input className="form-control text-bg-light" placeholder="Email"
                                type="email" {...register('email', emailRules)}/>
                         {(touchedFields.email || error_response.status) && errors.email &&
@@ -164,7 +164,7 @@ export default function Signup() {
                 </div>
                 <div className="row g-3 justify-content-center mx-3 mt-2">
                     <div className="birth-container col-md-6">
-                        <label>Felhasználónév</label>
+                        <label>Szül. dátum</label>
                         <input className="form-control text-bg-light" placeholder="Szül. dátum"
                                type="date" {...register('birth', birthRules)}/>
                         {touchedFields.birth && errors.birth &&
