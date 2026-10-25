@@ -809,6 +809,33 @@ select option:checked {
     .reservationform-container .card-header .title {
         font-size: 1.4rem;
     }
+
+    .roomform-container {
+        width: 96%;
+    }
+
+    .roomform-container .title {
+        font-size: 1.4rem !important;
+    }
+
+    .roomform-container .form-label {
+        font-size: 0.9rem;
+    }
+
+    .roomform-container .form-control {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.65rem;
+    }
+
+    .roomform-container button[type="submit"] {
+        width: 95% !important;
+        font-size: 1rem;
+        padding: 0.55rem;
+    }
+
+    .roomform-container .invalid-feedback {
+        font-size: 0.78rem;
+    }
 }
 
 @keyframes blur-message {
