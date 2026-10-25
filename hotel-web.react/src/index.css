@@ -648,6 +648,12 @@ select option:checked {
     transform: translateY(-5vh);
   }
 
+  .login-container,
+  .signup-container,
+  .userform-container{
+      width: 75%;
+  }
+
   .main-page {
     position: relative;
     top: auto;
@@ -731,6 +737,16 @@ select option:checked {
   .room-results-div .rooms-empty-message {
     min-height: 160px;
   }
+}
+
+
+@media (max-width: 600px) {
+    .login-container,
+    .signup-container,
+    .userform-container{
+        width: 94%;
+        max-width: none;
+    }
 }
 
 @keyframes blur-message {
