@@ -838,6 +838,51 @@ select option:checked {
     }
 }
 
+/* Mobile navbar dropdown */
+@media (max-width: 575.98px) {
+
+    .navbar .navbar-collapse > .navbar-nav:last-child {
+        width: 100%;
+        margin: 0 !important;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-item.dropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .profile-button {
+        margin: 0 auto;
+    }
+
+    .navbar .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        inset: auto !important;
+        float: none;
+
+        width: 90%;
+        max-width: 320px;
+        margin: 10px auto !important;
+
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .navbar .dropdown-menu .dropdown-item {
+        text-align: center;
+    }
+
+    .navbar ul .dropdown::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @keyframes blur-message {
   0% {
     opacity: 0;
